@@ -174,16 +174,16 @@ Duty 100% = always ON   = full brightness
 
 ```cpp
 // LED Blink — the Hello World of hardware
-// Connect: LED+ → Pin 2 → 220Ω resistor → GND
+// Connect: LED+ → Pin 12 → 220Ω resistor → GND
 
 void setup() {
-  pinMode(2, OUTPUT);  // set pin 2 as output
+  pinMode(12, OUTPUT);  // set pin 2 as output
 }
 
 void loop() {
-  digitalWrite(2, HIGH);  // LED ON
+  digitalWrite(12, HIGH);  // LED ON
   delay(250);              // wait 250ms
-  digitalWrite(2, LOW);   // LED OFF
+  digitalWrite(12, LOW);   // LED OFF
   delay(250);              // wait 250ms
 }
 ```
