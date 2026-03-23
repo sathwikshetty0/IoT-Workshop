@@ -198,10 +198,10 @@ void loop() {
 
 ```cpp
 // Button → LED control
-// LED:    Pin 2  → 220Ω → GND
+// LED:    Pin 12  → 220Ω → GND
 // Button: Pin 15 → GND (use INPUT_PULLUP)
 
-#define LED_PIN    2
+#define LED_PIN    12
 #define BUTTON_PIN 15
 
 void setup() {
@@ -231,11 +231,11 @@ void loop() {
 
 ```cpp
 // PWM Fade — LED breathes in and out
-// Connect: LED+ → Pin 2 → 220Ω → GND
+// Connect: LED+ → Pin 12 → 220Ω → GND
 
 void setup() {
   ledcSetup(0, 5000, 8);   // channel 0, 5000Hz frequency, 8-bit resolution (0-255)
-  ledcAttachPin(2, 0);      // attach pin 2 to channel 0
+  ledcAttachPin(12, 0);      // attach pin 2 to channel 0
 }
 
 void loop() {
