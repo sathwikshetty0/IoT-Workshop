@@ -83,21 +83,6 @@ Sensor → ESP32 → WiFi → ThingSpeak Cloud → Live Dashboard → Alert
 
 ---
 
-## 📅 Workshop Schedule
-
-```
-9:30 AM  ──── Kickoff + IoT Mindset
-10:00 AM ──── ESP32 Deep Dive (GPIO & PWM)
-11:00 AM ──── ☕ Break
-11:15 AM ──── 🔥 Sensor Playground (5 sensors)
-12:45 PM ──── 🍽️ Lunch
-1:30 PM  ──── Networking + ThingSpeak Cloud
-2:30 PM  ──── Data Visualization + Insights
-3:15 PM  ──── 🚀 Mini Hackathon
-4:15 PM  ──── Demo + Wrap-Up
-4:30 PM  ──── Done!
-```
-
 ---
 
 ---
