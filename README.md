@@ -219,20 +219,18 @@ void loop() {
 // Connect: LED+ → Pin 12 → 220Ω → GND
 
 void setup() {
-  ledcSetup(0, 5000, 8);   // channel 0, 5000Hz frequency, 8-bit resolution (0-255)
-  ledcAttachPin(12, 0);      // attach pin 2 to channel 0
+  pinMode(12, OUTPUT);
 }
 
 void loop() {
   // fade in
   for (int brightness = 0; brightness <= 255; brightness++) {
-    ledcWrite(0, brightness);
+    analogWrite(12, brightness);
     delay(8);
   }
-
   // fade out
   for (int brightness = 255; brightness >= 0; brightness--) {
-    ledcWrite(0, brightness);
+    analogWrite(12, brightness);
     delay(8);
   }
 }
