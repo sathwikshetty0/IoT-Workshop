@@ -691,15 +691,14 @@ Pot right pin → GND
 
 void setup() {
   Serial.begin(9600);
-  ledcSetup(0, 5000, 8);     // channel 0, 5kHz, 8-bit
-  ledcAttachPin(LED_PIN, 0); // attach LED to channel 0
+  pinMode(LED_PIN, OUTPUT);
 }
 
 void loop() {
-  int potValue  = analogRead(POT_PIN);           // 0–4095
-  int dutyCycle = map(potValue, 0, 4095, 0, 255);// map to 0–255
+  int potValue  = analogRead(POT_PIN);            // 0–4095
+  int dutyCycle = map(potValue, 0, 4095, 0, 255); // map to 0–255
 
-  ledcWrite(0, dutyCycle);
+  analogWrite(LED_PIN, dutyCycle);
 
   Serial.print("Pot: ");
   Serial.print(potValue);
