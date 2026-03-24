@@ -387,7 +387,7 @@ ESP32 ADC range: 0 (dark) to 4095 (bright)
 ### Code — Basic LDR Reading
 
 ```cpp
-#define LDR_PIN A0  // analog pin
+#define LDR_PIN 15  // analog pin
 #define LED_PIN 2
 
 void setup() {
