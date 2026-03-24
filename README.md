@@ -276,7 +276,7 @@ DHT11 Pin 4 (GND) → GND
 #include <DHT.h>
 
 #define DHTPIN  4      // data pin
-#define DHTTYPE DHT11  // sensor type
+#define DHTTYPE DHT22  // sensor type
 
 DHT dht(DHTPIN, DHTTYPE);
 
